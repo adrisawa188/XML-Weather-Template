@@ -57,24 +57,24 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(132, 145);
+            this.maxOutput.Location = new System.Drawing.Point(60, 149);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(50, 23);
             this.maxOutput.TabIndex = 32;
             this.maxOutput.Text = "max";
-            this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // minOutput
             // 
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(59, 145);
+            this.minOutput.Location = new System.Drawing.Point(128, 149);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(53, 23);
             this.minOutput.TabIndex = 30;
             this.minOutput.Text = "min";
-            this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // currentOutput
             // 
@@ -149,7 +149,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(110, 145);
+            this.label1.Location = new System.Drawing.Point(106, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 23);
             this.label1.TabIndex = 46;
