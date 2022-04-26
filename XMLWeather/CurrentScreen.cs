@@ -32,7 +32,28 @@ namespace XMLWeather
            
             
             cloudCoverLabel.Text = Form1.days[0].condition;
-     
+
+            int conditionCode = Convert.ToInt32(Form1.days[0].precipitation);
+
+            if (conditionCode >=200 && conditionCode < 600)
+            {
+                weatherImageBox.Image = Properties.Resources.rain1;
+            }
+
+            else if (conditionCode >= 600 && conditionCode < 700)
+            {
+                weatherImageBox.Image = Properties.Resources.snow1;
+            }
+
+            else if (conditionCode >= 800 && conditionCode < 803)
+            {
+                weatherImageBox.Image = Properties.Resources.sunny;
+            }
+
+            else if (conditionCode >= 803)
+            {
+                weatherImageBox.Image = Properties.Resources.cloudy;
+            }
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)

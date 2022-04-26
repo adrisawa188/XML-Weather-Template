@@ -38,6 +38,9 @@
             this.spacerLabel = new System.Windows.Forms.Label();
             this.cloudCoverLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.weatherImageBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -156,11 +159,33 @@
             this.label1.Text = "/";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // searchBox
+            // 
+            this.searchBox.BackColor = System.Drawing.Color.Black;
+            this.searchBox.ForeColor = System.Drawing.Color.White;
+            this.searchBox.Location = new System.Drawing.Point(3, 5);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(70, 20);
+            this.searchBox.TabIndex = 47;
+            this.searchBox.Text = "Search";
+            this.searchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // weatherImageBox
+            // 
+            this.weatherImageBox.Location = new System.Drawing.Point(54, 205);
+            this.weatherImageBox.Name = "weatherImageBox";
+            this.weatherImageBox.Size = new System.Drawing.Size(130, 106);
+            this.weatherImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.weatherImageBox.TabIndex = 48;
+            this.weatherImageBox.TabStop = false;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.weatherImageBox);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cloudCoverLabel);
             this.Controls.Add(this.spacerLabel);
@@ -173,7 +198,9 @@
             this.Controls.Add(this.tempLabel);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(250, 400);
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImageBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -188,5 +215,7 @@
         private System.Windows.Forms.Label spacerLabel;
         private System.Windows.Forms.Label cloudCoverLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.PictureBox weatherImageBox;
     }
 }

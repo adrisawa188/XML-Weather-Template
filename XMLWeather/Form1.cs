@@ -41,6 +41,9 @@ namespace XMLWeather
                 reader.ReadToFollowing("time");
                 newDay.date = reader.GetAttribute("day");
 
+                reader.ReadToFollowing("symbol");
+                newDay.precipitation = reader.GetAttribute("number");
+
                 reader.ReadToFollowing("temperature");
                 newDay.tempLow = reader.GetAttribute("min");
                 newDay.tempHigh = reader.GetAttribute("max");
