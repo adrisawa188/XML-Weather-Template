@@ -70,6 +70,8 @@ namespace XMLWeather
 
             reader.ReadToFollowing("clouds");
             days[0].condition = reader.GetAttribute("name");
+
+
         }
     }
 }

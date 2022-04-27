@@ -80,7 +80,5 @@ namespace XMLWeather
             CurrentScreen cs = new CurrentScreen();
             f.Controls.Add(cs);
         }
-
-
     }
 }

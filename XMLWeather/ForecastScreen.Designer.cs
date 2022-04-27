@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.forecastLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.min1 = new System.Windows.Forms.Label();
             this.max1 = new System.Windows.Forms.Label();
@@ -48,19 +47,20 @@
             this.min6 = new System.Windows.Forms.Label();
             this.max6 = new System.Windows.Forms.Label();
             this.date6 = new System.Windows.Forms.Label();
+            this.weatherImage1 = new System.Windows.Forms.PictureBox();
+            this.weatherImage2 = new System.Windows.Forms.PictureBox();
+            this.weatherImage3 = new System.Windows.Forms.PictureBox();
+            this.weatherImage4 = new System.Windows.Forms.PictureBox();
+            this.weatherImage5 = new System.Windows.Forms.PictureBox();
+            this.weatherImage6 = new System.Windows.Forms.PictureBox();
+            this.forecastLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // forecastLabel
-            // 
-            this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(167, 341);
-            this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(83, 28);
-            this.forecastLabel.TabIndex = 62;
-            this.forecastLabel.Text = "7 Day";
-            this.forecastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -243,11 +243,77 @@
             this.date6.TabIndex = 79;
             this.date6.Text = "Date";
             // 
+            // weatherImage1
+            // 
+            this.weatherImage1.Location = new System.Drawing.Point(93, 12);
+            this.weatherImage1.Name = "weatherImage1";
+            this.weatherImage1.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage1.TabIndex = 82;
+            this.weatherImage1.TabStop = false;
+            // 
+            // weatherImage2
+            // 
+            this.weatherImage2.Location = new System.Drawing.Point(93, 62);
+            this.weatherImage2.Name = "weatherImage2";
+            this.weatherImage2.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage2.TabIndex = 83;
+            this.weatherImage2.TabStop = false;
+            // 
+            // weatherImage3
+            // 
+            this.weatherImage3.Location = new System.Drawing.Point(93, 117);
+            this.weatherImage3.Name = "weatherImage3";
+            this.weatherImage3.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage3.TabIndex = 84;
+            this.weatherImage3.TabStop = false;
+            // 
+            // weatherImage4
+            // 
+            this.weatherImage4.Location = new System.Drawing.Point(93, 170);
+            this.weatherImage4.Name = "weatherImage4";
+            this.weatherImage4.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage4.TabIndex = 85;
+            this.weatherImage4.TabStop = false;
+            // 
+            // weatherImage5
+            // 
+            this.weatherImage5.Location = new System.Drawing.Point(93, 222);
+            this.weatherImage5.Name = "weatherImage5";
+            this.weatherImage5.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage5.TabIndex = 86;
+            this.weatherImage5.TabStop = false;
+            // 
+            // weatherImage6
+            // 
+            this.weatherImage6.Location = new System.Drawing.Point(93, 274);
+            this.weatherImage6.Name = "weatherImage6";
+            this.weatherImage6.Size = new System.Drawing.Size(77, 42);
+            this.weatherImage6.TabIndex = 87;
+            this.weatherImage6.TabStop = false;
+            // 
+            // forecastLabel
+            // 
+            this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
+            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forecastLabel.ForeColor = System.Drawing.Color.White;
+            this.forecastLabel.Location = new System.Drawing.Point(152, 341);
+            this.forecastLabel.Name = "forecastLabel";
+            this.forecastLabel.Size = new System.Drawing.Size(98, 28);
+            this.forecastLabel.TabIndex = 62;
+            this.forecastLabel.Text = "Forcast";
+            this.forecastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.weatherImage6);
+            this.Controls.Add(this.weatherImage5);
+            this.Controls.Add(this.weatherImage4);
+            this.Controls.Add(this.weatherImage3);
+            this.Controls.Add(this.weatherImage2);
+            this.Controls.Add(this.weatherImage1);
             this.Controls.Add(this.min6);
             this.Controls.Add(this.max6);
             this.Controls.Add(this.date6);
@@ -270,14 +336,18 @@
             this.Controls.Add(this.max1);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(250, 400);
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherImage6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label min1;
         private System.Windows.Forms.Label max1;
@@ -297,5 +367,12 @@
         private System.Windows.Forms.Label min6;
         private System.Windows.Forms.Label max6;
         private System.Windows.Forms.Label date6;
+        private System.Windows.Forms.PictureBox weatherImage1;
+        private System.Windows.Forms.PictureBox weatherImage2;
+        private System.Windows.Forms.PictureBox weatherImage3;
+        private System.Windows.Forms.PictureBox weatherImage4;
+        private System.Windows.Forms.PictureBox weatherImage5;
+        private System.Windows.Forms.PictureBox weatherImage6;
+        private System.Windows.Forms.Label forecastLabel;
     }
 }

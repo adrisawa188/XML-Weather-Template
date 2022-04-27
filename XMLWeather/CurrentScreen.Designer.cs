@@ -34,12 +34,11 @@
             this.currentOutput = new System.Windows.Forms.Label();
             this.tempLabel = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.spacerLabel = new System.Windows.Forms.Label();
             this.cloudCoverLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.searchBox = new System.Windows.Forms.TextBox();
             this.weatherImageBox = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.weatherImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,25 +103,13 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(167, 341);
+            this.forecastLabel.Location = new System.Drawing.Point(152, 341);
             this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(83, 28);
+            this.forecastLabel.Size = new System.Drawing.Size(98, 28);
             this.forecastLabel.TabIndex = 41;
-            this.forecastLabel.Text = "7 Day";
+            this.forecastLabel.Text = "Forcast";
             this.forecastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 341);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 28);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Today";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // spacerLabel
             // 
@@ -159,17 +146,6 @@
             this.label1.Text = "/";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // searchBox
-            // 
-            this.searchBox.BackColor = System.Drawing.Color.Black;
-            this.searchBox.ForeColor = System.Drawing.Color.White;
-            this.searchBox.Location = new System.Drawing.Point(3, 5);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(70, 20);
-            this.searchBox.TabIndex = 47;
-            this.searchBox.Text = "Search";
-            this.searchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // weatherImageBox
             // 
             this.weatherImageBox.Location = new System.Drawing.Point(54, 205);
@@ -179,20 +155,31 @@
             this.weatherImageBox.TabIndex = 48;
             this.weatherImageBox.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 341);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 28);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Today";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.weatherImageBox);
-            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cloudCoverLabel);
             this.Controls.Add(this.spacerLabel);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cityOutput);
-            this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.currentOutput);
             this.Controls.Add(this.tempLabel);
@@ -200,7 +187,6 @@
             this.Size = new System.Drawing.Size(250, 400);
             ((System.ComponentModel.ISupportInitialize)(this.weatherImageBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -211,11 +197,10 @@
         private System.Windows.Forms.Label currentOutput;
         private System.Windows.Forms.Label tempLabel;
         private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label spacerLabel;
         private System.Windows.Forms.Label cloudCoverLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.PictureBox weatherImageBox;
+        private System.Windows.Forms.Label label3;
     }
 }
